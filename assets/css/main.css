@@ -2379,16 +2379,6 @@ h6,
   padding-bottom: 8px;
   font-size: 14px;
 }
-
-.image-container {
-  display: inline-block; /* Display divs containing images inline */
-  margin-right: 10px; /* Add some spacing between images */
-}
-
-.image-container img {
-  max-width: 100%; /* Ensure images don't exceed their container width */
-  height: auto; /* Maintain aspect ratio */
-}
 .select-style-3 .select-position select {
   width: 100%;
   background: transparent;
