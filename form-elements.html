@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="assets/css/fullcalendar.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    
   </head>
   <body>
     <!-- ======== Preloader =========== -->
@@ -374,7 +376,7 @@
                           <img src="assets/images/profile/tiger-client-logo.jpeg" alt="" />
                         </div>
                         <div>
-                          <h6 class="fw-500">Eric</h6>
+                          <h6 class="fw-500">Piyush</h6>
                           <p>Balaghat</p>
                         </div>
                       </div>
@@ -387,7 +389,7 @@
                           <img src="assets/images/profile/tiger-client-logo.jpeg" alt="image">
                         </div>
                         <div class="content">
-                          <h4 class="text-sm">Eric</h4>
+                          <h4 class="text-sm">Piyush</h4>
                           <a class="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs"
                             href="#">Email@gmail.com</a>
                         </div>
@@ -521,9 +523,58 @@
                 </div>
                 <!-- end card -->
                 <!-- ======= input style end ======= -->
-
-              </div>
-             
+                <div>
+                  <button id="show-results" class="main-btn primary-btn btn-hover">
+                     Show Results
+                  </button>
+                </div>
+                
+                <section class="card-components" id="results" style="display: none;">
+                  <div class="container-fluid">
+                   
+                    <!-- ========== cards-styles start ========== -->
+                    <div class="cards-styles">
+                      
+                      <!-- ========= card-style-2 start ========= -->
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="title mt-30 mb-30">
+                            <h3>Results</h3>
+                          </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card-style-2 mb-30">
+                            <div class="card-image">
+                              <a href="#0">
+                                <img src="assets/images/capture/capture_1.jpeg" alt="" />
+                              </a>
+                            </div>
+                           
+                          </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card-style-2 mb-30">
+                            <div class="card-image">
+                              <a href="#0">
+                                <img src="assets/images/capture/capture_2.jpeg" alt="" />
+                              </a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <!-- end row -->
+                    
+                    </div>
+                    <!-- ========== cards-styles end ========== -->
+                  </div>
+                  <!-- end container -->
+                </section>
+                
+                
             
             <!-- end row -->
           </div>
@@ -532,7 +583,20 @@
         <!-- end container -->
       </section>
       <!-- ========== tab components end ========== -->
-
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var showResultsBtn = document.getElementById("show-results");
+          var results = document.getElementById("results");
+    
+          showResultsBtn.addEventListener("click", function() {
+            if (results.style.display === "none") {
+              results.style.display = "block";
+            } else {
+              results.style.display = "none";
+            }
+          });
+        });
+      </script>
       <!-- ========== footer start =========== -->
       <footer class="footer">
         <div class="container-fluid">
